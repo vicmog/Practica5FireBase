@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29527701199",
+    "project_id": "practica5firebase-9bc03",
+    "storage_bucket": "practica5firebase-9bc03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29527701199:android:92aa804dcd02efce3669ba",
+        "android_client_info": {
+          "package_name": "com.example.practica5firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29527701199-hvrj6kjhba6t3algf5qr1oi3bo8v9psj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9xTf-9umtpcXJQJnvhbsG7lMaYOxAexs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29527701199-hvrj6kjhba6t3algf5qr1oi3bo8v9psj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

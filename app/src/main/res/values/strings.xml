@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practica5FireBase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_registro">Registro</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_validaContraseña">Retry Password</string>
+    <string name="str_btCreaCuenta">Register</string>
+    <string name="str_haveacount">Login</string>
+    <string name="str_login">Login</string>
+</resources>

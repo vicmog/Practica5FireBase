@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.practica5firebase.view.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_listaMesasFragment"
+            app:destination="@id/listaMesasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.practica5firebase.view.fragments.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_listaMesasFragment"
+            app:destination="@id/listaMesasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaMesasFragment"
+        android:name="com.example.practica5firebase.view.fragments.ListaMesasFragment"
+        android:label="fragment_lista_mesas"
+        tools:layout="@layout/fragment_lista_mesas" >
+        <action
+            android:id="@+id/action_listaMesasFragment_to_listaReservasFragment"
+            app:destination="@id/listaReservasFragment" />
+        <action
+            android:id="@+id/action_listaMesasFragment_to_addMesaFragment"
+            app:destination="@id/addMesaFragment" />
+        <action
+            android:id="@+id/action_listaMesasFragment_to_editMesaFragment"
+            app:destination="@id/editMesaFragment" />
+        <action
+            android:id="@+id/action_listaMesasFragment_to_deleteReservaFragment"
+            app:destination="@id/deleteReservaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaReservasFragment"
+        android:name="com.example.practica5firebase.view.fragments.ListaReservasFragment"
+        android:label="fragment_lista_reservas"
+        tools:layout="@layout/fragment_lista_reservas" >
+        <action
+            android:id="@+id/action_listaReservasFragment_to_listaMesasFragment"
+            app:destination="@id/listaMesasFragment" />
+        <action
+            android:id="@+id/action_listaReservasFragment_to_addReservaFragment"
+            app:destination="@id/addReservaFragment" />
+        <action
+            android:id="@+id/action_listaReservasFragment_to_addReservaFragment2"
+            app:destination="@id/addReservaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMesaFragment"
+        android:name="com.example.practica5firebase.view.fragments.AddMesaFragment"
+        android:label="fragment_add_mesa"
+        tools:layout="@layout/fragment_add_mesa" >
+        <action
+            android:id="@+id/action_addMesaFragment_to_listaMesasFragment"
+            app:destination="@id/listaMesasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReservaFragment"
+        android:name="com.example.practica5firebase.view.fragments.AddReservaFragment"
+        android:label="fragment_add_reserva"
+        tools:layout="@layout/fragment_add_reserva" >
+        <action
+            android:id="@+id/action_addReservaFragment_to_listaReservasFragment"
+            app:destination="@id/listaReservasFragment" />
+        <action
+            android:id="@+id/action_addReservaFragment_to_mesasDisponiblesFragment"
+            app:destination="@id/mesasDisponiblesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mesasDisponiblesFragment"
+        android:name="com.example.practica5firebase.view.fragments.MesasDisponiblesFragment"
+        android:label="fragment_mesas_disponibles"
+        tools:layout="@layout/fragment_mesas_disponibles" >
+        <action
+            android:id="@+id/action_mesasDisponiblesFragment_to_addReservaFragment"
+            app:destination="@id/addReservaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nombreTelefonoReservaFragment"
+        android:name="com.example.practica5firebase.view.fragments.NombreTelefonoReservaFragment"
+        android:label="fragment_nombre_telefono_reserva"
+        tools:layout="@layout/fragment_nombre_telefono_reserva" />
+    <fragment
+        android:id="@+id/editMesaFragment"
+        android:name="com.example.practica5firebase.view.fragments.EditMesaFragment"
+        android:label="fragment_edit_mesa"
+        tools:layout="@layout/fragment_edit_mesa" >
+        <action
+            android:id="@+id/action_editMesaFragment_to_listaMesasFragment"
+            app:destination="@id/listaMesasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteReservaFragment"
+        android:name="com.example.practica5firebase.view.fragments.DeleteReservaFragment"
+        android:label="fragment_delete_reserva"
+        tools:layout="@layout/fragment_delete_reserva" >
+        <action
+            android:id="@+id/action_deleteReservaFragment_to_listaMesasFragment"
+            app:destination="@id/listaMesasFragment" />
+    </fragment>
+</navigation>
